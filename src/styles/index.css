@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.header {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.content {
+  text-align: center;
+  padding: 20px;
+  background-color: #1b1b32;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.deposit-button {
+  background-color: #424c75;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.description {
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.amount {
+  margin: 20px 0;
+}
+
+.currency {
+  font-size: 18px;
+  vertical-align: super;
+}
+
+.value {
+  font-size: 36px;
+}
+
+.limit {
+  font-size: 12px;
+  color: #999;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.amount-button {
+  background-color: #424c75;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+.note {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.pay-button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}

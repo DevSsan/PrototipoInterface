@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: url('https://s3-alpha-sig.figma.com/img/3a26/ef1b/0b83cb64edfc8e0c4b58b6475f2bc2ce?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nzkoBP0Uxtfp~T08HKG92UWnDfSbhzYSG14qiG7KjsEYtDDnKGbNZnro3Bwr845duZU6FWWeZqKY7A5X1kBX0OlM-0KJodgOVHoACF2TrqqQH2O~KWUwr7PcqV026-vtsCxgiUGlU~n1cZDwhWDOT2MnPheOsK~S6fiQoTT6-TJJvPhlbTtu6pTIZCX5NVz78x~JubCHFt9iYrCibQmS~TqxU21FgGHB34~NDUqWuD8sPt3Wibep5wMy8ZqGoZNxBrdHWnsMvoHjiC3nVPtsb4tEuRb07hE4l~qUaVzMcW7RVWcu0FqJK3yCq79x8QcywZrFuvCkfL5R2nTxJLTc3A__') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  position: relative; /
+}
+
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(34, 156, 119, 1), rgba(58, 34, 156, 0.67)); 
+  z-index: 1; 
+}
+
+.container {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 600px;
+  margin: 20px; 
+  width: 100%;
+  box-sizing: border-box; 
+  z-index: 2; 
+}
+
+.texto {
+  margin-bottom: 20px; 
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.botao {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 50px; 
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 768px) {
+  .container {
+      padding: 15px;
+      margin-bottom: 20px; 
+  }
+
+  .botao {
+      padding: 8px 16px;
+      font-size: 14px;
+  }
+
+  .button-container {
+      margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+      padding: 10px;
+      text-align: left; 
+  }
+
+  .botao {
+      margin-top: 5rem;
+      padding: 6px 12px;
+      font-size: 12px;
+      width: 100%; 
+      max-width: 20rem; 
+  }
+
+  .button-container {
+      margin-top: 20px; 
+      justify-content: center; 
+  }
+}

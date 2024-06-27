@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://s3-alpha-sig.figma.com/img/82c0/6386/69fe7d14b1f6be7ca82d9fc860015530?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LizaI~br9K1uEjE1HQ263qcz5xIjLCKybwjQDCoowI4rzVw8UF8~AG3-J5UX~8Iw74bwvpGwYmXfDFH4r3nv1hnOrZPhxxQjfKgzqqWfjV5AmIBeBHH6sESUWK2DEG9K4CLUa1YX4-rO1ob2o7uu79C1CiL0OEhnzcnne9O~Iff1O9y2lLqV~Z1Jhv2vJ2EpjtqzLuNM6HA9qjKZgAGaWDVxuwLjWWWCm91u78IjGxYxl2941o89VAGyCF~RJQgFYb8byIbuCFLCsK6cLVOVnx495659eSfNrwTy5FLNHCQqgO0~qClLByK2g1hyDwVPxVdu-kUDssMDmrrjwFh0rA__') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(65, 44, 149, 0.7), rgba(0, 0, 0, 0.7)); 
+    z-index: 1;
+}
+
+
+.welcome-content {
+    position: relative;
+    z-index: 2; 
+    max-width: 600px;
+    padding: 20px;
+    color: #fff; 
+    margin-top: 50px; 
+}
+
+.welcome-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px; 
+}
+
+.welcome-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px; 
+}
+
+
+button {
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: #fff; 
+    border: 2px solid #fff; 
+    border-radius: 20px; 
+    padding: 15px 30px; 
+    font-size: 1.2rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s; 
+    outline: none; 
+}
+
+button:hover {
+    background-color: #fff; 
+    color: rgba(255, 255, 255, 0.8); 
+}
+
